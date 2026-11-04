@@ -53,3 +53,9 @@ export GIT_COMMITTER_EMAIL=$KM_EMAIL
 unalias l 2>/dev/null
 export SDIRS="$KM_HOME/.sdirs"
 source "$KM_BASH/lib/bashmarks.sh"
+
+# Set up an alias to ring a bell
+alias b="tput bel"
+
+# Turn off tab completion bell
+bind 'set bell-style none'
